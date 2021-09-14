@@ -8,8 +8,9 @@
 	<title>Mispollos</title>
 	<!-- Favicon icon -->
 	<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
-    <!-- Datatable -->
-    <link href="./vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
+	<link href="./vendor/sweetalert2/dist/sweetalert2.min.css" rel="stylesheet">
+	<!-- Datatable -->
+	<link href="./vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="./vendor/chartist/css/chartist.min.css">
 	<link href="./vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
 	<link href="./vendor/owl-carousel/owl.carousel.css" rel="stylesheet">
@@ -669,7 +670,7 @@
 					<div class="collapse navbar-collapse justify-content-between">
 						<div class="header-left">
 							<div class="dashboard_bar">
-								Dashboard
+								Productos
 							</div>
 						</div>
 						<ul class="navbar-nav header-right">
@@ -795,19 +796,19 @@
 											<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
 											<circle cx="12" cy="7" r="4"></circle>
 										</svg>
-										<span class="ml-2">Profile </span>
+										<span class="ml-2">Mi cuenta</span>
 									</a>
-									<a href="./email-inbox.html" class="dropdown-item ai-icon">
-										<svg id="icon-inbox" xmlns="http://www.w3.org/2000/svg" class="text-success"
-											width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-											stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-											<path
-												d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-											</path>
-											<polyline points="22,6 12,13 2,6"></polyline>
-										</svg>
-										<span class="ml-2">Inbox </span>
-									</a>
+									<!-- <a href="./email-inbox.html" class="dropdown-item ai-icon">
+                                        <svg id="icon-inbox" xmlns="http://www.w3.org/2000/svg" class="text-success"
+                                            width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path
+                                                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                            </path>
+                                            <polyline points="22,6 12,13 2,6"></polyline>
+                                        </svg>
+                                        <span class="ml-2">Inbox </span>
+                                    </a> -->
 									<a href="./page-login.html" class="dropdown-item ai-icon">
 										<svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" class="text-danger"
 											width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -816,7 +817,7 @@
 											<polyline points="16 17 21 12 16 7"></polyline>
 											<line x1="21" y1="12" x2="9" y2="12"></line>
 										</svg>
-										<span class="ml-2">Logout </span>
+										<span class="ml-2">Salir</span>
 									</a>
 								</div>
 							</li>
@@ -837,152 +838,41 @@
 				<a href="javascript:void(0)" class="add-menu-sidebar" data-toggle="modal"
 					data-target="#addOrderModalside">+ Nueva orden</a>
 				<ul class="metismenu" id="menu">
-					<li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+					<li><a class="ai-icon" href="index.html" aria-expanded="false">
 							<i class="flaticon-381-networking"></i>
 							<span class="nav-text">Dashboard</span>
 						</a>
-						<ul aria-expanded="true">
-							<li><a href="index.html">Dashboard</a></li>
-							<li><a href="products.html">Productos</a></li>
-							<li><a href="event-detail.html">Pedidos</a></li>
-							<li><a href="customers.html">Categorias</a></li>
-							<li><a href="analytics.html">Clientes</a></li>
-							<li><a href="reviews.html">Proveedores</a></li>
-						</ul>
 					</li>
-					<!-- <li>
-						<a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="flaticon-381-television"></i>
-							<span class="nav-text">Apps</span>
-						</a>
-						<ul aria-expanded="false">
-							<li><a href="./app-profile.html">Profile</a></li>
-							<li><a href="./post-details.html">Post Details</a></li>
-							<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Email</a>
-								<ul aria-expanded="false">
-									<li><a href="./email-compose.html">Compose</a></li>
-									<li><a href="./email-inbox.html">Inbox</a></li>
-									<li><a href="./email-read.html">Read</a></li>
-								</ul>
-							</li>
-							<li><a href="./app-calender.html">Calendar</a></li>
-							<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Shop</a>
-								<ul aria-expanded="false">
-									<li><a href="./ecom-product-grid.html">Product Grid</a></li>
-									<li><a href="./ecom-product-list.html">Product List</a></li>
-									<li><a href="./ecom-product-detail.html">Product Details</a></li>
-									<li><a href="./ecom-product-order.html">Order</a></li>
-									<li><a href="./ecom-checkout.html">Checkout</a></li>
-									<li><a href="./ecom-invoice.html">Invoice</a></li>
-									<li><a href="./ecom-customers.html">Customers</a></li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="flaticon-381-controls-3"></i>
-							<span class="nav-text">Charts</span>
-						</a>
-						<ul aria-expanded="false">
-							<li><a href="./chart-flot.html">Flot</a></li>
-							<li><a href="./chart-morris.html">Morris</a></li>
-							<li><a href="./chart-chartjs.html">Chartjs</a></li>
-							<li><a href="./chart-chartist.html">Chartist</a></li>
-							<li><a href="./chart-sparkline.html">Sparkline</a></li>
-							<li><a href="./chart-peity.html">Peity</a></li>
-						</ul>
-					</li>
-					<li>
-						<a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="flaticon-381-internet"></i>
-							<span class="nav-text">Bootstrap</span>
-						</a>
-						<ul aria-expanded="false">
-							<li><a href="./ui-accordion.html">Accordion</a></li>
-							<li><a href="./ui-alert.html">Alert</a></li>
-							<li><a href="./ui-badge.html">Badge</a></li>
-							<li><a href="./ui-button.html">Button</a></li>
-							<li><a href="./ui-modal.html">Modal</a></li>
-							<li><a href="./ui-button-group.html">Button Group</a></li>
-							<li><a href="./ui-list-group.html">List Group</a></li>
-							<li><a href="./ui-media-object.html">Media Object</a></li>
-							<li><a href="./ui-card.html">Cards</a></li>
-							<li><a href="./ui-carousel.html">Carousel</a></li>
-							<li><a href="./ui-dropdown.html">Dropdown</a></li>
-							<li><a href="./ui-popover.html">Popover</a></li>
-							<li><a href="./ui-progressbar.html">Progressbar</a></li>
-							<li><a href="./ui-tab.html">Tab</a></li>
-							<li><a href="./ui-typography.html">Typography</a></li>
-							<li><a href="./ui-pagination.html">Pagination</a></li>
-							<li><a href="./ui-grid.html">Grid</a></li>
-
-						</ul>
-					</li>
-					<li>
-						<a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="flaticon-381-heart"></i>
-							<span class="nav-text">Plugins</span>
-						</a>
-						<ul aria-expanded="false">
-							<li><a href="./uc-select2.html">Select 2</a></li>
-							<li><a href="./uc-nestable.html">Nestedable</a></li>
-							<li><a href="./uc-noui-slider.html">Noui Slider</a></li>
-							<li><a href="./uc-sweetalert.html">Sweet Alert</a></li>
-							<li><a href="./uc-toastr.html">Toastr</a></li>
-							<li><a href="./map-jqvmap.html">Jqv Map</a></li>
-							<li><a href="./uc-lightgallery.html">Lightgallery</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="widget-basic.html" class="ai-icon" aria-expanded="false">
-							<i class="flaticon-381-settings-2"></i>
-							<span class="nav-text">Widget</span>
+					<li class="mm-active"><a class="ai-icon" href="products.html" aria-expanded="false">
+							<i class="flaticon-381-box"></i>
+							<span class="nav-text">Productos</span>
 						</a>
 					</li>
-					<li>
-						<a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+					<li><a class="ai-icon" href="orders.html" aria-expanded="false">
 							<i class="flaticon-381-notepad"></i>
-							<span class="nav-text">Forms</span>
+							<span class="nav-text">Pedidos</span>
 						</a>
-						<ul aria-expanded="false">
-							<li><a href="./form-element.html">Form Elements</a></li>
-							<li><a href="./form-wizard.html">Wizard</a></li>
-							<li><a href="./form-editor-summernote.html">Summernote</a></li>
-							<li><a href="form-pickers.html">Pickers</a></li>
-							<li><a href="form-validation-jquery.html">Jquery Validate</a></li>
-						</ul>
 					</li>
-					<li>
-						<a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="flaticon-381-network"></i>
-							<span class="nav-text">Table</span>
+					<li><a class="ai-icon" href="categories.html" aria-expanded="false">
+							<i class="flaticon-381-background"></i>
+							<span class="nav-text">Categorias</span>
 						</a>
-						<ul aria-expanded="false">
-							<li><a href="table-bootstrap-basic.html">Bootstrap</a></li>
-							<li><a href="table-datatable-basic.html">Datatable</a></li>
-						</ul>
 					</li>
-					<li>
-						<a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="flaticon-381-layer-1"></i>
-							<span class="nav-text">Pages</span>
+					<li><a class="ai-icon" href="customers.html" aria-expanded="false">
+							<i class="flaticon-381-user"></i>
+							<span class="nav-text">Clientes</span>
 						</a>
-						<ul aria-expanded="false">
-							<li><a href="./page-register.html">Register</a></li>
-							<li><a href="./page-login.html">Login</a></li>
-							<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Error</a>
-								<ul aria-expanded="false">
-									<li><a href="./page-error-400.html">Error 400</a></li>
-									<li><a href="./page-error-403.html">Error 403</a></li>
-									<li><a href="./page-error-404.html">Error 404</a></li>
-									<li><a href="./page-error-500.html">Error 500</a></li>
-									<li><a href="./page-error-503.html">Error 503</a></li>
-								</ul>
-							</li>
-							<li><a href="./page-lock-screen.html">Lock Screen</a></li>
-						</ul>
-					</li> -->
+					</li>
+					<li><a class="ai-icon" href="providers.html" aria-expanded="false">
+							<i class="flaticon-381-home-1"></i>
+							<span class="nav-text">Proveedores</span>
+						</a>
+					</li>
+					<li><a class="ai-icon" href="employees.html" aria-expanded="false">
+							<i class="flaticon-381-user-1"></i>
+							<span class="nav-text">Empleados</span>
+						</a>
+					</li>
 				</ul>
 				<div class="copyright">
 					<p><strong>Mispollos</strong> © 2021 Todos los derechos reservados</p>
@@ -1005,399 +895,527 @@
 					<div class="modal-dialog" role="document">
 						<div class="modal-content">
 							<div class="modal-header">
-								<h5 class="modal-title">Add Event</h5>
+								<h5 class="modal-title">Agregar producto</h5>
 								<button type="button" class="close" data-dismiss="modal"><span>&times;</span>
 								</button>
 							</div>
 							<div class="modal-body">
 								<form>
 									<div class="form-group">
-										<label class="text-black font-w500">Event Name</label>
+										<label class="text-black font-w500">Nombre</label>
 										<input type="text" class="form-control">
 									</div>
 									<div class="form-group">
-										<label class="text-black font-w500">Event Date</label>
-										<input type="date" class="form-control">
-									</div>
-									<div class="form-group">
-										<label class="text-black font-w500">Description</label>
+										<label class="text-black font-w500">Telefono</label>
 										<input type="text" class="form-control">
 									</div>
 									<div class="form-group">
-										<button type="button" class="btn btn-primary">Create</button>
+										<button type="button" class="btn btn-primary">Agregar</button>
 									</div>
 								</form>
 							</div>
 						</div>
 					</div>
 				</div>
-                <!-- <div class="page-titles">
+				<!-- <div class="page-titles">
 					<ol class="breadcrumb">
 						<li class="breadcrumb-item"><a href="javascript:void(0)">Table</a></li>
 						<li class="breadcrumb-item active"><a href="javascript:void(0)">Productos</a></li>
 					</ol>
                 </div> -->
-                <!-- row -->
-
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Productos</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <table id="example" class="display min-w850">
-                                        <thead>
-                                            <tr>
-                                                <th>Nombre</th>
-                                                <th>Categoria</th>
-                                                <th>Proveedor</th>
-                                                <th>Cantidad</th>
-                                                <th>Fecha de vencimiento</th>
-                                                <th>Precio</th>
-                                                <th>Acciones</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Nuggets de pollo apanados frescampo x 20 Unds</td>
-                                                <td>Pollo, carne y pescado</td>
-                                                <td>éxito</td>
-                                                <td>480</td>
-                                                <td>2022-03-25</td>
-                                                <td>$ 6.750</td>
-                                                <td>
+				<!-- row -->
+				<div class="d-flex flex-wrap mb-2 align-items-center justify-content-between">
+					<div class="mb-3 mr-3">
+						<a href="javascript:void(0)" class="btn btn-rounded btn-primary text-nowrap"><i
+								class="fa fa-file-text scale5 mr-3" aria-hidden="true"></i>Exportar</a>
+					</div>
+					<!--  <div class="event-tabs mb-3 mr-3">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#All" role="tab"
+                                    aria-selected="true">
+                                    All
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#Sold" role="tab" aria-selected="false">
+                                    Sold
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#Refunded" role="tab" aria-selected="false">
+                                    Refunded
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#Canceled" role="tab" aria-selected="false">
+                                    Canceled
+                                </a>
+                            </li>
+                        </ul>
+                    </div> -->
+					<div class="d-flex mb-3">
+						<button type="button" class="btn btn-rounded btn-primary mr-3" data-toggle="modal"
+							data-target="#addOrderModalside"><span class="btn-icon-left text-info"><i
+									class="fa fa-plus text-primary"></i>
+							</span>Agregar producto</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="card">
+							<!-- <div class="card-header">
+                                <h4 class="card-title">Proveedores</h4>
+                            </div> -->
+							<div class="card-body">
+								<div class="table-responsive">
+									<table id="example" class="display min-w850">
+										<thead>
+											<tr>
+												<th>Nombre</th>
+												<th>Categoria</th>
+												<th>Proveedor</th>
+												<th>Cantidad</th>
+												<th>Fecha de vencimiento</th>
+												<th>Precio</th>
+												<th>Acciones</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Nuggets de pollo apanados frescampo x 20 Unds</td>
+												<td>Pollo, carne y pescado</td>
+												<td>éxito</td>
+												<td>480</td>
+												<td>2022-03-25</td>
+												<td>$ 6.750</td>
+												<td>
 													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
+														<button class="btn btn-primary shadow btn-xs sharp mr-1"
+															data-toggle="modal" data-target="#addOrderModalside"><i
+																class="fa fa-pencil"></i></button>
+														<button
+															class="btn btn-danger shadow btn-xs sharp sweet-confirm"><i
+																class="fa fa-trash"></i></button>
 													</div>
 												</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Pierna pernil de pollo marinado Frescampo x 1000 g	</td>
-                                                <td>Pollo, carne y pescado</td>
-                                                <td>éxito</td>
-                                                <td>491</td>
-                                                <td>2022-04-30</td>
-                                                <td>$ 7.500</td>
-                                                <td>
+											</tr>
+											<tr>
+												<td>Pierna pernil de pollo marinado Frescampo x 1000 g </td>
+												<td>Pollo, carne y pescado</td>
+												<td>éxito</td>
+												<td>491</td>
+												<td>2022-04-30</td>
+												<td>$ 7.500</td>
+												<td>
 													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
+														<button class="btn btn-primary shadow btn-xs sharp mr-1"
+															data-toggle="modal" data-target="#addOrderModalside"><i
+																class="fa fa-pencil"></i></button>
+														<button
+															class="btn btn-danger shadow btn-xs sharp sweet-confirm"><i
+																class="fa fa-trash"></i></button>
 													</div>
 												</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Pollo con visceras x 1800 Gramo</td>
-                                                <td>Pollo, carne y pescado</td>
-                                                <td>éxito</td>
-                                                <td>459</td>
-                                                <td>2022-04-15</td>
-                                                <td>$ 12.804</td>
-                                                <td>
+											</tr>
+											<tr>
+												<td>Pollo con visceras x 1800 Gramo</td>
+												<td>Pollo, carne y pescado</td>
+												<td>éxito</td>
+												<td>459</td>
+												<td>2022-04-15</td>
+												<td>$ 12.804</td>
+												<td>
 													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
+														<button class="btn btn-primary shadow btn-xs sharp mr-1"
+															data-toggle="modal" data-target="#addOrderModalside"><i
+																class="fa fa-pencil"></i></button>
+														<button
+															class="btn btn-danger shadow btn-xs sharp sweet-confirm"><i
+																class="fa fa-trash"></i></button>
 													</div>
 												</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Lomo Ancho Ancla & Viento 450 Gr</td>
-                                                <td>Pollo, carne y pescado</td>
-                                                <td>Frigogher</td>
-                                                <td>500</td>
-                                                <td>2022-03-11</td>
-                                                <td>$ 23.000</td>
-                                                <td>
+											</tr>
+											<tr>
+												<td>Lomo Ancho Ancla & Viento 450 Gr</td>
+												<td>Pollo, carne y pescado</td>
+												<td>Frigogher</td>
+												<td>500</td>
+												<td>2022-03-11</td>
+												<td>$ 23.000</td>
+												<td>
 													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
+														<button class="btn btn-primary shadow btn-xs sharp mr-1"
+															data-toggle="modal" data-target="#addOrderModalside"><i
+																class="fa fa-pencil"></i></button>
+														<button
+															class="btn btn-danger shadow btn-xs sharp sweet-confirm"><i
+																class="fa fa-trash"></i></button>
 													</div>
 												</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Filete De Tilapia Frigogher 450 Gr	</td>
-                                                <td>Pollo, carne y pescado</td>
-                                                <td>Frigogher</td>
-                                                <td>480</td>
-                                                <td>2022-06-23</td>
-                                                <td>$ 19.190</td>
-                                                <td>
+											</tr>
+											<tr>
+												<td>Filete De Tilapia Frigogher 450 Gr </td>
+												<td>Pollo, carne y pescado</td>
+												<td>Frigogher</td>
+												<td>480</td>
+												<td>2022-06-23</td>
+												<td>$ 19.190</td>
+												<td>
 													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
+														<button class="btn btn-primary shadow btn-xs sharp mr-1"
+															data-toggle="modal" data-target="#addOrderModalside"><i
+																class="fa fa-pencil"></i></button>
+														<button
+															class="btn btn-danger shadow btn-xs sharp sweet-confirm"><i
+																class="fa fa-trash"></i></button>
 													</div>
 												</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Carne Molida De Pollo Pimpollo 500 Gr</td>
-                                                <td>Pollo, carne y pescado</td>
-                                                <td>Friko</td>
-                                                <td>478</td>
-                                                <td>2022-04-16</td>
-                                                <td>$ 3.890</td>
-                                                <td>
+											</tr>
+											<tr>
+												<td>Carne Molida De Pollo Pimpollo 500 Gr</td>
+												<td>Pollo, carne y pescado</td>
+												<td>Friko</td>
+												<td>478</td>
+												<td>2022-04-16</td>
+												<td>$ 3.890</td>
+												<td>
 													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
+														<button class="btn btn-primary shadow btn-xs sharp mr-1"
+															data-toggle="modal" data-target="#addOrderModalside"><i
+																class="fa fa-pencil"></i></button>
+														<button
+															class="btn btn-danger shadow btn-xs sharp sweet-confirm"><i
+																class="fa fa-trash"></i></button>
 													</div>
 												</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Pollo Adobado Listo Para Asar En Casa Friko 2100 Gr	</td>
-                                                <td>Pollo, carne y pescado</td>
-                                                <td>Friko</td>
-                                                <td>439</td>
-                                                <td>2022-04-15</td>
-                                                <td>$ 26.050</td>
-                                                <td>
+											</tr>
+											<tr>
+												<td>Pollo Adobado Listo Para Asar En Casa Friko 2100 Gr </td>
+												<td>Pollo, carne y pescado</td>
+												<td>Friko</td>
+												<td>439</td>
+												<td>2022-04-15</td>
+												<td>$ 26.050</td>
+												<td>
 													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
+														<button class="btn btn-primary shadow btn-xs sharp mr-1"
+															data-toggle="modal" data-target="#addOrderModalside"><i
+																class="fa fa-pencil"></i></button>
+														<button
+															class="btn btn-danger shadow btn-xs sharp sweet-confirm"><i
+																class="fa fa-trash"></i></button>
 													</div>
 												</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Alitas De Pollo Friko Marinadas BBQ 900 gr</td>
-                                                <td>Pollo, carne y pescado</td>
-                                                <td>Friko</td>
-                                                <td>496</td>
-                                                <td>2022-04-15</td>
-                                                <td>$ 16.590</td>
-                                                <td>
+											</tr>
+											<tr>
+												<td>Alitas De Pollo Friko Marinadas BBQ 900 gr</td>
+												<td>Pollo, carne y pescado</td>
+												<td>Friko</td>
+												<td>496</td>
+												<td>2022-04-15</td>
+												<td>$ 16.590</td>
+												<td>
 													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
+														<button class="btn btn-primary shadow btn-xs sharp mr-1"
+															data-toggle="modal" data-target="#addOrderModalside"><i
+																class="fa fa-pencil"></i></button>
+														<button
+															class="btn btn-danger shadow btn-xs sharp sweet-confirm"><i
+																class="fa fa-trash"></i></button>
 													</div>
 												</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Menudencia Fina De Pollo Friko Bandeja 500 Gr</td>
-                                                <td>Pollo, carne y pescado</td>
-                                                <td>Friko</td>
-                                                <td>485</td>
-                                                <td>2022-03-19</td>
-                                                <td>$ 3.690</td>
-                                                <td>
+											</tr>
+											<tr>
+												<td>Menudencia Fina De Pollo Friko Bandeja 500 Gr</td>
+												<td>Pollo, carne y pescado</td>
+												<td>Friko</td>
+												<td>485</td>
+												<td>2022-03-19</td>
+												<td>$ 3.690</td>
+												<td>
 													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
+														<button class="btn btn-primary shadow btn-xs sharp mr-1"
+															data-toggle="modal" data-target="#addOrderModalside"><i
+																class="fa fa-pencil"></i></button>
+														<button
+															class="btn btn-danger shadow btn-xs sharp sweet-confirm"><i
+																class="fa fa-trash"></i></button>
 													</div>
 												</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Contramuslo De Pollo Friko Con Piel 700 Gr</td>
-                                                <td>Pollo, carne y pescado</td>
-                                                <td>Friko</td>
-                                                <td>470</td>
-                                                <td>2022-05-20</td>
-                                                <td>$ 9.490</td>
-                                                <td>
+											</tr>
+											<tr>
+												<td>Contramuslo De Pollo Friko Con Piel 700 Gr</td>
+												<td>Pollo, carne y pescado</td>
+												<td>Friko</td>
+												<td>470</td>
+												<td>2022-05-20</td>
+												<td>$ 9.490</td>
+												<td>
 													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
+														<button class="btn btn-primary shadow btn-xs sharp mr-1"
+															data-toggle="modal" data-target="#addOrderModalside"><i
+																class="fa fa-pencil"></i></button>
+														<button
+															class="btn btn-danger shadow btn-xs sharp sweet-confirm"><i
+																class="fa fa-trash"></i></button>
 													</div>
 												</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Trozos de Pechuga Apanados Friko 900 Gr</td>
-                                                <td>Pollo, carne y pescado</td>
-                                                <td>Friko</td>
-                                                <td>500</td>
-                                                <td>2022-02-25</td>
-                                                <td>$ 31.290</td>
-                                                <td>
+											</tr>
+											<tr>
+												<td>Trozos de Pechuga Apanados Friko 900 Gr</td>
+												<td>Pollo, carne y pescado</td>
+												<td>Friko</td>
+												<td>500</td>
+												<td>2022-02-25</td>
+												<td>$ 31.290</td>
+												<td>
 													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
+														<button class="btn btn-primary shadow btn-xs sharp mr-1"
+															data-toggle="modal" data-target="#addOrderModalside"><i
+																class="fa fa-pencil"></i></button>
+														<button
+															class="btn btn-danger shadow btn-xs sharp sweet-confirm"><i
+																class="fa fa-trash"></i></button>
 													</div>
 												</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Alas Y Bombones Friko BBQ Precocidos 500 Gr</td>
-                                                <td>Pollo, carne y pescado</td>
-                                                <td>Friko</td>
-                                                <td>440</td>
-                                                <td>2022-01-28</td>
-                                                <td>$ 14.990</td>
-                                                <td>
+											</tr>
+											<tr>
+												<td>Alas Y Bombones Friko BBQ Precocidos 500 Gr</td>
+												<td>Pollo, carne y pescado</td>
+												<td>Friko</td>
+												<td>440</td>
+												<td>2022-01-28</td>
+												<td>$ 14.990</td>
+												<td>
 													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
+														<button class="btn btn-primary shadow btn-xs sharp mr-1"
+															data-toggle="modal" data-target="#addOrderModalside"><i
+																class="fa fa-pencil"></i></button>
+														<button
+															class="btn btn-danger shadow btn-xs sharp sweet-confirm"><i
+																class="fa fa-trash"></i></button>
 													</div>
 												</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Nuggets de pollo apanados frescampo x 20 Unds</td>
-                                                <td>Pollo, carne y pescado</td>
-                                                <td>éxito</td>
-                                                <td>480</td>
-                                                <td>2022-03-25</td>
-                                                <td>$ 6.750</td>
-                                                <td>
+											</tr>
+											<tr>
+												<td>Nuggets de pollo apanados frescampo x 20 Unds</td>
+												<td>Pollo, carne y pescado</td>
+												<td>éxito</td>
+												<td>480</td>
+												<td>2022-03-25</td>
+												<td>$ 6.750</td>
+												<td>
 													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
+														<button class="btn btn-primary shadow btn-xs sharp mr-1"
+															data-toggle="modal" data-target="#addOrderModalside"><i
+																class="fa fa-pencil"></i></button>
+														<button
+															class="btn btn-danger shadow btn-xs sharp sweet-confirm"><i
+																class="fa fa-trash"></i></button>
 													</div>
 												</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Pierna pernil de pollo marinado Frescampo x 1000 g	</td>
-                                                <td>Pollo, carne y pescado</td>
-                                                <td>éxito</td>
-                                                <td>491</td>
-                                                <td>2022-04-30</td>
-                                                <td>$ 7.500</td>
-                                                <td>
+											</tr>
+											<tr>
+												<td>Pierna pernil de pollo marinado Frescampo x 1000 g </td>
+												<td>Pollo, carne y pescado</td>
+												<td>éxito</td>
+												<td>491</td>
+												<td>2022-04-30</td>
+												<td>$ 7.500</td>
+												<td>
 													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
+														<button class="btn btn-primary shadow btn-xs sharp mr-1"
+															data-toggle="modal" data-target="#addOrderModalside"><i
+																class="fa fa-pencil"></i></button>
+														<button
+															class="btn btn-danger shadow btn-xs sharp sweet-confirm"><i
+																class="fa fa-trash"></i></button>
 													</div>
 												</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Pollo con visceras x 1800 Gramo</td>
-                                                <td>Pollo, carne y pescado</td>
-                                                <td>éxito</td>
-                                                <td>459</td>
-                                                <td>2022-04-15</td>
-                                                <td>$ 12.804</td>
-                                                <td>
+											</tr>
+											<tr>
+												<td>Pollo con visceras x 1800 Gramo</td>
+												<td>Pollo, carne y pescado</td>
+												<td>éxito</td>
+												<td>459</td>
+												<td>2022-04-15</td>
+												<td>$ 12.804</td>
+												<td>
 													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
+														<button class="btn btn-primary shadow btn-xs sharp mr-1"
+															data-toggle="modal" data-target="#addOrderModalside"><i
+																class="fa fa-pencil"></i></button>
+														<button
+															class="btn btn-danger shadow btn-xs sharp sweet-confirm"><i
+																class="fa fa-trash"></i></button>
 													</div>
 												</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Lomo Ancho Ancla & Viento 450 Gr</td>
-                                                <td>Pollo, carne y pescado</td>
-                                                <td>Frigogher</td>
-                                                <td>500</td>
-                                                <td>2022-03-11</td>
-                                                <td>$ 23.000</td>
-                                                <td>
+											</tr>
+											<tr>
+												<td>Lomo Ancho Ancla & Viento 450 Gr</td>
+												<td>Pollo, carne y pescado</td>
+												<td>Frigogher</td>
+												<td>500</td>
+												<td>2022-03-11</td>
+												<td>$ 23.000</td>
+												<td>
 													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
+														<button class="btn btn-primary shadow btn-xs sharp mr-1"
+															data-toggle="modal" data-target="#addOrderModalside"><i
+																class="fa fa-pencil"></i></button>
+														<button
+															class="btn btn-danger shadow btn-xs sharp sweet-confirm"><i
+																class="fa fa-trash"></i></button>
 													</div>
 												</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Filete De Tilapia Frigogher 450 Gr	</td>
-                                                <td>Pollo, carne y pescado</td>
-                                                <td>Frigogher</td>
-                                                <td>480</td>
-                                                <td>2022-06-23</td>
-                                                <td>$ 19.190</td>
-                                                <td>
+											</tr>
+											<tr>
+												<td>Filete De Tilapia Frigogher 450 Gr </td>
+												<td>Pollo, carne y pescado</td>
+												<td>Frigogher</td>
+												<td>480</td>
+												<td>2022-06-23</td>
+												<td>$ 19.190</td>
+												<td>
 													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
+														<button class="btn btn-primary shadow btn-xs sharp mr-1"
+															data-toggle="modal" data-target="#addOrderModalside"><i
+																class="fa fa-pencil"></i></button>
+														<button
+															class="btn btn-danger shadow btn-xs sharp sweet-confirm"><i
+																class="fa fa-trash"></i></button>
 													</div>
 												</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Carne Molida De Pollo Pimpollo 500 Gr</td>
-                                                <td>Pollo, carne y pescado</td>
-                                                <td>Friko</td>
-                                                <td>478</td>
-                                                <td>2022-04-16</td>
-                                                <td>$ 3.890</td>
-                                                <td>
+											</tr>
+											<tr>
+												<td>Carne Molida De Pollo Pimpollo 500 Gr</td>
+												<td>Pollo, carne y pescado</td>
+												<td>Friko</td>
+												<td>478</td>
+												<td>2022-04-16</td>
+												<td>$ 3.890</td>
+												<td>
 													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
+														<button class="btn btn-primary shadow btn-xs sharp mr-1"
+															data-toggle="modal" data-target="#addOrderModalside"><i
+																class="fa fa-pencil"></i></button>
+														<button
+															class="btn btn-danger shadow btn-xs sharp sweet-confirm"><i
+																class="fa fa-trash"></i></button>
 													</div>
 												</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Pollo Adobado Listo Para Asar En Casa Friko 2100 Gr	</td>
-                                                <td>Pollo, carne y pescado</td>
-                                                <td>Friko</td>
-                                                <td>439</td>
-                                                <td>2022-04-15</td>
-                                                <td>$ 26.050</td>
-                                                <td>
+											</tr>
+											<tr>
+												<td>Pollo Adobado Listo Para Asar En Casa Friko 2100 Gr </td>
+												<td>Pollo, carne y pescado</td>
+												<td>Friko</td>
+												<td>439</td>
+												<td>2022-04-15</td>
+												<td>$ 26.050</td>
+												<td>
 													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
+														<button class="btn btn-primary shadow btn-xs sharp mr-1"
+															data-toggle="modal" data-target="#addOrderModalside"><i
+																class="fa fa-pencil"></i></button>
+														<button
+															class="btn btn-danger shadow btn-xs sharp sweet-confirm"><i
+																class="fa fa-trash"></i></button>
 													</div>
 												</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Alitas De Pollo Friko Marinadas BBQ 900 gr</td>
-                                                <td>Pollo, carne y pescado</td>
-                                                <td>Friko</td>
-                                                <td>496</td>
-                                                <td>2022-04-15</td>
-                                                <td>$ 16.590</td>
-                                                <td>
+											</tr>
+											<tr>
+												<td>Alitas De Pollo Friko Marinadas BBQ 900 gr</td>
+												<td>Pollo, carne y pescado</td>
+												<td>Friko</td>
+												<td>496</td>
+												<td>2022-04-15</td>
+												<td>$ 16.590</td>
+												<td>
 													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
+														<button class="btn btn-primary shadow btn-xs sharp mr-1"
+															data-toggle="modal" data-target="#addOrderModalside"><i
+																class="fa fa-pencil"></i></button>
+														<button
+															class="btn btn-danger shadow btn-xs sharp sweet-confirm"><i
+																class="fa fa-trash"></i></button>
 													</div>
 												</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Menudencia Fina De Pollo Friko Bandeja 500 Gr</td>
-                                                <td>Pollo, carne y pescado</td>
-                                                <td>Friko</td>
-                                                <td>485</td>
-                                                <td>2022-03-19</td>
-                                                <td>$ 3.690</td>
-                                                <td>
+											</tr>
+											<tr>
+												<td>Menudencia Fina De Pollo Friko Bandeja 500 Gr</td>
+												<td>Pollo, carne y pescado</td>
+												<td>Friko</td>
+												<td>485</td>
+												<td>2022-03-19</td>
+												<td>$ 3.690</td>
+												<td>
 													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
+														<button class="btn btn-primary shadow btn-xs sharp mr-1"
+															data-toggle="modal" data-target="#addOrderModalside"><i
+																class="fa fa-pencil"></i></button>
+														<button
+															class="btn btn-danger shadow btn-xs sharp sweet-confirm"><i
+																class="fa fa-trash"></i></button>
 													</div>
 												</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Contramuslo De Pollo Friko Con Piel 700 Gr</td>
-                                                <td>Pollo, carne y pescado</td>
-                                                <td>Friko</td>
-                                                <td>470</td>
-                                                <td>2022-05-20</td>
-                                                <td>$ 9.490</td>
-                                                <td>
+											</tr>
+											<tr>
+												<td>Contramuslo De Pollo Friko Con Piel 700 Gr</td>
+												<td>Pollo, carne y pescado</td>
+												<td>Friko</td>
+												<td>470</td>
+												<td>2022-05-20</td>
+												<td>$ 9.490</td>
+												<td>
 													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
+														<button class="btn btn-primary shadow btn-xs sharp mr-1"
+															data-toggle="modal" data-target="#addOrderModalside"><i
+																class="fa fa-pencil"></i></button>
+														<button
+															class="btn btn-danger shadow btn-xs sharp sweet-confirm"><i
+																class="fa fa-trash"></i></button>
 													</div>
 												</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Trozos de Pechuga Apanados Friko 900 Gr</td>
-                                                <td>Pollo, carne y pescado</td>
-                                                <td>Friko</td>
-                                                <td>500</td>
-                                                <td>2022-02-25</td>
-                                                <td>$ 31.290</td>
-                                                <td>
+											</tr>
+											<tr>
+												<td>Trozos de Pechuga Apanados Friko 900 Gr</td>
+												<td>Pollo, carne y pescado</td>
+												<td>Friko</td>
+												<td>500</td>
+												<td>2022-02-25</td>
+												<td>$ 31.290</td>
+												<td>
 													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
+														<button class="btn btn-primary shadow btn-xs sharp mr-1"
+															data-toggle="modal" data-target="#addOrderModalside"><i
+																class="fa fa-pencil"></i></button>
+														<button
+															class="btn btn-danger shadow btn-xs sharp sweet-confirm"><i
+																class="fa fa-trash"></i></button>
 													</div>
 												</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Alas Y Bombones Friko BBQ Precocidos 500 Gr</td>
-                                                <td>Pollo, carne y pescado</td>
-                                                <td>Friko</td>
-                                                <td>440</td>
-                                                <td>2022-01-28</td>
-                                                <td>$ 14.990</td>
-                                                <td>
+											</tr>
+											<tr>
+												<td>Alas Y Bombones Friko BBQ Precocidos 500 Gr</td>
+												<td>Pollo, carne y pescado</td>
+												<td>Friko</td>
+												<td>440</td>
+												<td>2022-01-28</td>
+												<td>$ 14.990</td>
+												<td>
 													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
+														<button class="btn btn-primary shadow btn-xs sharp mr-1"
+															data-toggle="modal" data-target="#addOrderModalside"><i
+																class="fa fa-pencil"></i></button>
+														<button
+															class="btn btn-danger shadow btn-xs sharp sweet-confirm"><i
+																class="fa fa-trash"></i></button>
 													</div>
 												</td>
-                                            </tr>
-                                        </tbody>
-                                        <!-- <tfoot>
+											</tr>
+										</tbody>
+										<!-- <tfoot>
                                             <tr>
                                                 <th>Nombre</th>
                                                 <th>Categoria</th>
@@ -1407,13 +1425,57 @@
                                                 <th>Cantidad</th>
                                             </tr>
                                         </tfoot> -->
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+									</table>
+									<!-- Modal -->
+									<div class="modal fade" id="exampleModalCenter">
+										<div class="modal-dialog modal-dialog-centered" role="document">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h5 class="modal-title">Agregar producto</h5>
+													<button type="button" class="close"
+														data-dismiss="modal"><span>&times;</span>
+													</button>
+												</div>
+												<form class="form" action="#">
+													<div class="modal-body">
+														<div class="basic-form">
+															<div class="form-group">
+																<label>Nombre</label>
+																<div class="input-group mb-3 input-warning-o">
+																	<div class="input-group-prepend">
+																		<span class="input-group-text">@</span>
+																	</div>
+																	<input type="text" class="form-control"
+																		placeholder="Nombre del proveedor">
+																</div>
+															</div>
+															<div class="form-group">
+																<label>Telefono</label>
+																<div class="input-group mb-3 input-warning-o">
+																	<div class="input-group-prepend">
+																		<span class="input-group-text">@</span>
+																	</div>
+																	<input type="text" class="form-control"
+																		placeholder="Telefono del proveedor">
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-danger light"
+															data-dismiss="modal">Cerrar</button>
+														<button type="button" class="btn btn-primary">Guardar</button>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-            </div>
+			</div>
 		</div>
 		<!--**********************************
             Content body end
@@ -1449,15 +1511,24 @@
 	<!--**********************************
         Scripts
     ***********************************-->
-	    <!-- Required vendors -->
-        <script src="./vendor/global/global.min.js"></script>
-        <script src="./vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-        <script src="./js/custom.min.js"></script>
-        <script src="./js/deznav-init.js"></script>
-        
-        <!-- Datatable -->
-        <script src="./vendor/datatables/js/jquery.dataTables.min.js"></script>
-        <script src="./js/plugins-init/datatables.init.js"></script>
+	<!-- Required vendors -->
+	<script src="./vendor/global/global.min.js"></script>
+	<script src="./vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+	<script src="./js/custom.min.js"></script>
+	<script src="./js/deznav-init.js"></script>
+
+	<!-- SweetAlert -->
+	<script src="./vendor/sweetalert2/dist/sweetalert2.min.js"></script>
+	<script>
+		document.querySelectorAll(".sweet-confirm").forEach(element => {
+			element.onclick = function () { swal({ title: "Are you sure to delete ?", text: "You will not be able to recover this imaginary file !!", type: "warning", showCancelButton: !0, confirmButtonColor: "#DD6B55", confirmButtonText: "Yes, delete it !!", closeOnConfirm: !1 }, function () { swal("Deleted !!", "Hey, your imaginary file has been deleted !!", "success") }) }
+		});
+	</script>
+
+	<!-- Datatable -->
+	<script src="./vendor/datatables/js/jquery.dataTables.min.js"></script>
+	<script src="./js/plugins-init/datatables.init.js"></script>
+
 </body>
 
 </html>
